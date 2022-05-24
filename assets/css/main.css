@@ -2759,6 +2759,7 @@ input, select, textarea {
 				display: none;
 			}
 
+
 			.tiles article header {
 				position: relative;
 				z-index: 3;
@@ -2830,8 +2831,12 @@ input, select, textarea {
 				width: 60%;
 			}
 
-			.tiles article:nth-child(6n - 5):before {
+			/* .tiles article:nth-child(6n - 5):before {
 				background-color: #6fc3df;
+			} */
+
+			.tiles article:nth-child(6n - 5):before {
+				background-image: "images/pic01.gif";
 			}
 
 			.tiles article:nth-child(6n - 4):before {
