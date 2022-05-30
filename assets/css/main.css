@@ -2827,7 +2827,8 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+			.tiles article:nth-child(4n - 1) ,
+			.tiles article:nth-child(4n - 2) {
 				width: 60%;
 			}
 
