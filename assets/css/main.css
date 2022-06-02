@@ -160,11 +160,12 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color:#9bf1ff
+			/* color: #9bf1ff !important; */
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #9bf1ff !important;
 		}
 
 	strong, b {
@@ -2151,11 +2152,12 @@ input, select, textarea {
 	}
 
 	a.icon.alt:hover:before {
-		background-color: #6fc3df;
+		background-color:#9bf1ff
+		/* background-color: #6fc3df; */
 	}
 
 	a.icon.alt:active:before {
-		background-color: #37a6cb;
+		background-color: #9bf1ff;
 	}
 
 /* Image */
@@ -2402,12 +2404,13 @@ input, select, textarea {
 				}
 
 					ul.pagination li > .page.active:hover {
-						background-color: #9bf1ff;
+						background-color:#9bf1ff
+						/* background-color: #9bf1ff; */
 						color: #242943 !important;
 					}
 
 					ul.pagination li > .page.active:active {
-						background-color: #53e3fb;
+						background-color: #9bf1ff;
 					}
 
 			ul.pagination li:first-child {
@@ -2854,11 +2857,12 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #87c5a4;
 			}
 
 			.tiles article:nth-child(6n):before {
 				background-color: #87c5a4;
+				/* background-color: #8ea9e8; */
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -2892,6 +2896,7 @@ input, select, textarea {
 				.tiles article h3 {
 					font-size: 1.5em;
 				}
+
 
 		}
 
@@ -2932,6 +2937,11 @@ input, select, textarea {
 		border-top: 0 !important;
 	}
 
+	.spotlights h3 {
+		border-bottom: 2px solid red;
+		border-bottom: 0
+	}
+
 		.spotlights + * {
 			border-top: 0 !important;
 		}
@@ -2945,7 +2955,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #bcbdcf;
 		}
 
 			.spotlights > section > .image {
@@ -3144,7 +3154,9 @@ input, select, textarea {
 			height: inherit;
 			line-height: inherit;
 			padding: 0 1.5em;
+
 		}
+
 
 			#header .logo strong {
 				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3160,11 +3172,11 @@ input, select, textarea {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #f0c993;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: #f0c993;
 			}
 
 		#header nav {
@@ -3230,6 +3242,7 @@ input, select, textarea {
 
 					#header nav a[href="#menu"]:hover:after, #header nav a[href="#menu"]:active:after {
 						opacity: 1;
+						color:#f0c993
 					}
 
 					#header nav a[href="#menu"]:last-child {
@@ -3266,7 +3279,7 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: #f0c993;
 			}
 
 			#header.alt.style2 .logo strong {
