@@ -2797,13 +2797,13 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.75;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
 			}
 
-			.tiles article:after {
+			/* .tiles article:after {
 				background-color: rgba(36, 41, 67, 0.25);
 				content: '';
 				display: block;
@@ -2813,13 +2813,14 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 1;
-			}
+				opacity:0
+			} */
 
 			.tiles article:hover:before {
 				opacity: 0;
 			}
 
-			.tiles article.is-transitioning {
+			/* .tiles article.is-transitioning {
 				-moz-transform: scale(0.95);
 				-webkit-transform: scale(0.95);
 				-ms-transform: scale(0.95);
@@ -2829,41 +2830,66 @@ input, select, textarea {
 				-ms-filter: blur(0.5em);
 				filter: blur(0.5em);
 				opacity: 0;
-			}
+			} */
+
 
 			.tiles article:nth-child(4n - 1) ,
 			.tiles article:nth-child(4n - 2) {
 				width: 60%;
 			}
 
+			.tiles article:nth-child(6n - 1) {
+				width: 100%;
+			}
+
 			/* .tiles article:nth-child(6n - 5):before {
 				background-color: #6fc3df;
-			} */
+				background-image: "images/pic01.gif"
+				original colors: (6n-5) see pic_01
+				original colors: (6n-4) #8d82c4
+				original colors: (6n-3) #ec8d81
+				original colors: (6n-2) #e7b788
+				original colors: (6n-1) #87c5a4
+				original colors: (6n) #87c5a4
 
+				background-color: #e27d60;
+			} */
 			.tiles article:nth-child(6n - 5):before {
 				background-image: "images/pic01.gif";
 			}
 
-			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+			.tiles article:nth-child(6n - 5):before {
+				background-color: #e27d60;
 			}
 
+			.tiles article:nth-child(6n - 4):before {
+				background-color: #99cccc;
+			}
+
+
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #f7cf92;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #c38d9e;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #87c5a4;
+				background-color: #41b3a3;
+			}
+			/* this is to avoid hover in the section in progress */
+			.tiles article:nth-child(6n - 1) h3 a:hover {
+				opacity: 0.75 !important;
 			}
 
-			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
-				/* background-color: #8ea9e8; */
+			.tiles article:nth-child(6n - 1):hover:before {
+				opacity: 0.75;
 			}
+
+			/* .tiles article:nth-child(6n):before {
+				background-color: #41b3a3;
+			}  */
 
 		@media screen and (max-width: 1280px) {
 
@@ -2955,9 +2981,9 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #bcbdcf;
+			background-color: #e4cfdd;
 		}
-
+		/* #bcbdcf */
 			.spotlights > section > .image {
 				background-position: center center;
 				background-size: cover;
