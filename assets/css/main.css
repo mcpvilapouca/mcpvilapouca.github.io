@@ -2879,13 +2879,13 @@ input, select, textarea {
 				background-color: #41b3a3;
 			}
 			/* this is to avoid hover in the section in progress */
-			.tiles article:nth-child(6n - 1) h3 a:hover {
+			/* .tiles article:nth-child(6n - 1) h3 a:hover {
 				opacity: 0.75 !important;
-			}
+			} */
 
-			.tiles article:nth-child(6n - 1):hover:before {
+			/* .tiles article:nth-child(6n - 1):hover:before {
 				opacity: 0.75;
-			}
+			} */
 
 			/* .tiles article:nth-child(6n):before {
 				background-color: #41b3a3;
