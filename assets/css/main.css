@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, header1, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header,header1, hgroup, menu, nav, section {
 	display: block;}
 
 body {
@@ -2769,6 +2769,7 @@ input, select, textarea {
 				z-index: 3;
 			}
 
+
 			.tiles article h3 {
 				font-size: 1.75em;
 			}
@@ -2838,6 +2839,7 @@ input, select, textarea {
 				width: 60%;
 			}
 
+
 			/* this is to add a tile the complete width */
 			/* .tiles article:nth-child(6n - 1) {
 				width: 100%;
@@ -2867,10 +2869,22 @@ input, select, textarea {
 				background-color: #99cccc;
 			}
 
-
 			.tiles article:nth-child(6n - 3):before {
 				background-color: #f7cf92;
 			}
+
+/* -------- this is to change the length on the line in the tile (6n-3) genetic algorithm:-------- */
+
+			.tiles article:nth-child(6n - 3) header.major > :first-child:after{
+				content: '';
+				background-color: #ffffff;
+				display: block;
+				height: 2px;
+				margin: 0.325em 0 0.5em 0;
+				width: 70%;
+			}
+
+/* ------------------------------------------------------------------------------------------------- */
 
 			.tiles article:nth-child(6n - 2):before {
 				background-color: #c38d9e;
@@ -2879,14 +2893,15 @@ input, select, textarea {
 			.tiles article:nth-child(6n - 1):before {
 				background-color: #8CC0AE;
 			}
-			/* this is to avoid hover in the section in progress */
+/* ---------- this is to avoid hover in the section in progress ---------------------------------- */
+
 			/* .tiles article:nth-child(6n - 1) h3 a:hover {
 				opacity: 0.75 !important;
 			} */
 
 			/* .tiles article:nth-child(6n - 1):hover:before {
 				opacity: 0.75;
-			} */
+/* ------------------------------------------------------------------------------------------------- */
 
 			.tiles article:nth-child(6n):before {
 				background-color: #049EA0;
