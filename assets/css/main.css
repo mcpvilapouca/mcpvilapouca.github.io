@@ -2838,9 +2838,10 @@ input, select, textarea {
 				width: 60%;
 			}
 
-			.tiles article:nth-child(6n - 1) {
+			/* this is to add a tile the complete width */
+			/* .tiles article:nth-child(6n - 1) {
 				width: 100%;
-			}
+			} */
 
 			/* .tiles article:nth-child(6n - 5):before {
 				background-color: #6fc3df;
@@ -2876,7 +2877,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #41b3a3;
+				background-color: #8CC0AE;
 			}
 			/* this is to avoid hover in the section in progress */
 			/* .tiles article:nth-child(6n - 1) h3 a:hover {
@@ -2887,9 +2888,9 @@ input, select, textarea {
 				opacity: 0.75;
 			} */
 
-			/* .tiles article:nth-child(6n):before {
-				background-color: #41b3a3;
-			}  */
+			.tiles article:nth-child(6n):before {
+				background-color: #049EA0;
+			}
 
 		@media screen and (max-width: 1280px) {
 
